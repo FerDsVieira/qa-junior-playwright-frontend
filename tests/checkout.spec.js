@@ -15,15 +15,15 @@ test('Compra de 2 ou mais produtos', async ({ page }) => {
 
   const produtos = ['sauce-labs-backpack', 'sauce-labs-bike-light']; // Lista de produtos
   await cartPage.addMultipleProducts(produtos); // Adiciona 2 ou mais produtos ao carrinho
-  await cartPage.cartButton.click()
-  await cartPage.checkoutButton.click()
+  await cartPage.cartButton.click() // Clica no ícone do carrinho para acessar a tela do carrinho
+  await cartPage.checkoutButton.click()  // Clica no botão de checkout para iniciar o processo de finalização
 
-  await checkoutPage.nameInput.fill('Teste')
-  await checkoutPage.lastNameInput.fill('Da Silva')
-  await checkoutPage.postalCodeInput.fill('123456')
-  await checkoutPage.continueButton.click()
-  await checkoutPage.finishButton.click()
-  expect (checkoutPage.messageSucess).toBeVisible()
+  await checkoutPage.nameInput.fill('Teste') // Preenche o campo do primeiro nome no checkout
+  await checkoutPage.lastNameInput.fill('Da Silva') // Preenche o campo do sobrenome
+  await checkoutPage.postalCodeInput.fill('123456') // Preenche o código postal
+  await checkoutPage.continueButton.click()  // Clica no botão “Continue” para seguir para a revisão da compra
+  await checkoutPage.finishButton.click() // Clica no botão para finalizar a compra
+  expect (checkoutPage.messageSucess).toBeVisible() // Validação: garante que a mensagem de sucesso da compra está visível
 
   
 })

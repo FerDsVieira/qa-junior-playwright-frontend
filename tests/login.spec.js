@@ -10,9 +10,9 @@ test.describe('Login', () => {
     await loginPage.usernameInput.fill('standard_user') // Preenche o campo de usuário com credenciais válidas
     await loginPage.passwordInput.fill('secret_sauce') // Preenche o campo de senha com a senha correta
     await loginPage.loginButton.click() // Clica no botão de login
-    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html') // Espera até que a URL mude
+    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html') // Espera até que a URL mude e a valida
     const pageTitle = page.locator('.title');
-    await expect(pageTitle).toHaveText('Products'); // Valida que após Login o titulo da página tenha 'Products'
+    await expect(pageTitle).toHaveText('Products'); // Valida que após Login o titulo da página tenha o texto 'Products'
 
   })
 
