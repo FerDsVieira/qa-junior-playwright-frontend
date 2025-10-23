@@ -15,6 +15,7 @@ Os testes cobrem funcionalidades essenciais de **login, adição e remoção de 
 ```bash
 git clone https://github.com/seu-usuario/qa-playwright-saucedemo.git
 cd qa-junior-playwright-frontend
+```
 
 ## 🚀 Execução dos testes:
 npx playwright test 
