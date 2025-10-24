@@ -30,3 +30,6 @@ cd qa-junior-playwright-frontend
 ```bash
 npx playwright test
 ```
+## Evidência
+
+<img width="303" height="344" alt="image" src="https://github.com/user-attachments/assets/f5e53b97-f39a-470a-8d99-93c0f89dd984" />
