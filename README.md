@@ -8,7 +8,6 @@ Os testes cobrem funcionalidades essenciais de **login, adição e remoção de 
 - [Playwright Test](https://playwright.dev/docs/test-api-testing) — framework de automação
 - **JavaScript (ES6+)**
 - **Node.js** — ambiente de execução
-- **GoRest API** — serviço público de testes RESTful
 - **VS Code + extensão Playwright Test**
 
 ---
