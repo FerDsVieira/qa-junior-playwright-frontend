@@ -13,7 +13,7 @@ Os testes cobrem funcionalidades essenciais de **login, adição e remoção de 
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/qa-playwright-saucedemo.git
+git clone https://github.com/FerDsVieira/qa-junior-playwright-frontend.git
 cd qa-junior-playwright-frontend
 ```
 
